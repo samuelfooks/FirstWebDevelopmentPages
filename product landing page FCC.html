@@ -1,0 +1,193 @@
+<main id ="main">
+  <header id="header">
+   
+    <div>  
+<nav id="nav-bar">
+  <ul>
+<li> <a class="nav-link" href="#to-sell">For Sale</a></li>
+<li> <a class="nav-link"href="#to-rent">For Rent</a></li>
+    <li> <a class="nav-link" href="#learn">Learn</a></li>
+<li> <a class="nav-link" href="#contactus"> Contact Us</a></li>
+  </ul>
+    </nav>
+    </div>
+     <div id="logo">
+    <div id="brand">
+      <p1>Buskys Banjos</p1>
+    </div>
+    <div id="logo-image">
+      <img id= "header-img" src=     "https://i.pinimg.com/originals/35/85/3f/35853fcf19ccc718e320e208bd4761c9.png" alt= "banjo drawing"/>
+    </div>
+    </div>
+</header>
+
+<section id="to-sell">  
+<h2>For Sale</h2>
+<p5>
+    Deering Boston Tenor Banjo
+    <img id="DeeringBoston" src= "https://banjo.com/wp-content/uploads/2016/09/deering-boston-19-fret-tenor.jpeg" alt="deering boston banjo">
+      <ul>
+        <li>3 years old</li>
+        <li>19 frets</li>
+        <li>blue grass </li>
+      </ul>
+  </p5>
+  </section>
+
+<section id="to-rent">
+    <h3>
+    For Rent
+    </h3>
+    <p6>
+    Gibson dobro banjo
+    <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqIteMd2lMZZgiAx8q624TdteiqFs75PuLdc10uP5Djon5-Sw" alt= "gibson dobro banjo">
+    <ul>
+        <li>standard 5 string</li>
+        <li>light weight</li>
+        <li>perfect learner </li>
+      </ul>
+    </p6>
+  </section>
+    
+      <section id="learn">
+        <h4> Learn</h4>
+        
+        <iframe id="video" height="400" src="https://youtube.com/embed/xP5qEaVEngM" frameborder="0" allowfullscreen></iframe>
+        <p6>Learn how to play bluegrass by renting from us and watching Youtube videos!</p6>
+      </section>
+ <section id="contactus">
+   <h4>Contact Us</h4>
+   <p7>You can reach us best by email</p7>
+   <form id="form" action= " https://www.freecodecamp.com/email-submit"><input name="email" id="email" type="email" placeholder="Enter your email address here" required />
+     <input id="comments" type="text" value="your short message" maxlength="200"/>
+     <input id="input" type="submit" value="Contact" />
+   </form>
+   
+  </section>
+  
+</main>
+
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+#header{
+  position:fixed;
+  top:0;
+  margin-top:0px;
+  height:50px;
+  width:1200px;
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  }
+#logo{
+  
+  display: flex;
+  flex-direction: row;
+  padding:20px;
+}
+#logo-image{
+  
+  width:100px;
+  }
+
+#header-img {
+  
+  width: 30px;
+  height:50px;
+  }
+
+#brand{
+  font-size:24px;
+  font-family:"Arial";
+}
+
+#nav-bar  {
+    margin-left:180px;
+    width:800px;
+    display:flex;
+    flex-direction:row;
+    font-size:24px;
+    justify-content:space-around;
+    font-family:Serif;
+    background-color:white;
+   
+  }
+
+nav > ul {
+  list-style:none;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width:650px){
+nav >ul {
+  justify-content:right;
+  display:flex;
+  flex-direction:row;
+  }
+}
+  
+#to-sell{
+  margin-top:100px;
+}
+  
+  h2  {
+    font-size:32px ;
+  }
+p5{
+  font-size: 28px;
+  font-family:"Helvetica";
+}
+
+p5 > ul{
+  font-size:20px;
+  font-family:"Helvetica";
+  list-style-type:square;
+}
+ p5 > img  {
+    width: 300px;
+    height:400px;
+  }
+
+h3{
+  margin-top:100px;
+  font-size: 32px;
+  font-family:"Helvetica";
+}
+p6{
+  font-size:28px;
+  font-family:"Helvetica";
+}
+p6 > ul{
+  list-style-type:circle;
+  font-size:20px;
+  font-family:"Helvetica";
+}
+
+h4{
+  margin-top:100px;
+  font-size: 32px;
+  font-family:"Helvetica";
+}
+#learn{
+  display:flex;
+  flex-direction:column;
+}
+iframe{
+  max-width:600px;
+  width:100%;
+}
+</style>
