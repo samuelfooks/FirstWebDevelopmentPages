@@ -1,0 +1,157 @@
+<main id ="main">
+    <h1 id="title" class="title"> Edible Insects Survey   </h1>
+    <P id="description">
+
+            Let us know what you think about our edible insects
+
+    </P>
+    <!-- <select name= "bugtypes">Bug Types
+       <option value="choice"></option>
+       <option value="crickets">Crickets</option>
+       <option value="mealworms">Meal Worms</option>
+       <option value="tigerworms">Tiger Worms</option>-->
+
+    <form id="survey-form">
+            <input type="text" id="name" placeholder="Your name" required=True>
+    <input type="email" id="email" placeholder="Your email" required=True>
+    <input type="number" id="number" placeholder="number of purchases" max="1000" min="0" required=True>
+    <select id="dropdown">
+        <option value="first order">first order</option>
+        <option value="weekly order">weekly order</option>
+        <option value="montly order">monthly order</option>
+    </select>
+
+    <div class="dropdown">
+        <p2 class="dropdownbtn"> Favorite Insect</p2>
+        <div class="dropdown-content">
+            <label id="crickets"><input type="radio" name="bugtype" value="cricket">Crickets</label>
+            <label id="mealworms" for="mealworms"><input  type="radio" name="bugtype" value="mealworm">Meal Worms</label>
+            <label id="tigerworms" for="tigerworms"><input type="radio" name="bugtype" value="tigerworm">Tiger Worms</label>
+        </div>
+
+    </div>
+    <p id="issueschecklist-label">
+        Issues with previous orders:
+    </p>
+    <div class= "issueschecklist">
+        <label for= "lateorder"><input id="lateorder" type="checkbox" value="issues">Late Order</label>
+        <label for= "incorrectflavor"><input id="incorrectflavor" type="checkbox" value="issues">Incorrect Flavor</label>
+        <label for= "incorrectinsect"><input id="incorrectinsect" type="checkbox" value="issues">Incorrect Insect</label>
+        <label id="incorrectamount" for= "incorrectamount"><input type="checkbox" value="issues">Incorrect Amount</label>
+        <label class="other"><input type="checkbox" value="issues">Other(leave in comments)</label>
+    </div>
+    <textarea type="text" id="customerfeedback" maxlength="200" placeholder="Submit question or comments here
+                                                                             (200 characters or less)"></textarea>
+    <button id="submitbtn">Submit Feedback</button>
+
+    </form>
+
+</main>
+
+
+<style>
+.title{
+    font-size: 56px;
+    background-size: 16px;
+    color: white;
+    background-color: Black;
+    text-align:center;
+}
+#description {
+  color: green;
+  font-size: 24px;
+  font-family: monospace;
+  text-align:center;
+}
+#survey-form{
+  margin:10px;
+}
+#name-label{
+  margin:10px;
+}
+#email-label{
+  margin:10px;
+}
+ #number-label{
+    width:150px;
+   margin:10px;
+  }
+.dropdown{
+  width:200px;
+  margin:auto;
+}
+
+.dropdownbtn{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: black;
+}
+
+.dropdown-content{
+  display: none;
+  font-size:16px;
+  position: center;
+  padding: 5px;
+  z-index: 1;
+  height:30px;
+}
+
+.dropdown:hover .dropdown-content{
+  display:block;
+  margin:auto;
+  padding: 10px;
+  width:200px;
+  position:center;
+}
+#crickets:hover {
+  color:orange;
+}
+#mealworms:hover{
+  color:red;
+}
+#tigerworms:hover{
+  color:green;
+}
+
+form{
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+
+#submitbtn{
+  margin-left:580px;
+  margin:20px;
+}
+#issueschecklist-label{
+  height:20px;
+}
+.issueschecklist{
+  margin-left:500px;
+  display:grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows:50px 50px;
+  justify-items:center;
+  font-size:14px;
+}
+#incorrectamount{
+  margin-left:10px;
+}
+.other{
+  margin-left: 180px;
+  text-align:center;
+  font-size:14px;
+}
+#customerfeedback{
+  width:300px;
+  height:100px;
+  text-align:left;
+  margin-left:30px;
+}
+#submitbtn{
+  margin-left:550px;
+  width:150px;
+}
+</style>
